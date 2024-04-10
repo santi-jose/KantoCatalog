@@ -43,7 +43,7 @@ for (const pokemon of pokemonData){
 const searchForm = document.getElementById("search");
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
-    const query = document.getElementById("query").value;
+    const query = document.getElementById("query").value.toLowerCase();
     console.log(query);
 
     const pokemonDivs = document.getElementsByClassName("pokemonDiv");
