@@ -44,7 +44,7 @@ const searchForm = document.getElementById("search");
 searchForm.addEventListener("submit", (e) => {
     e.preventDefault();
     const query = document.getElementById("query").value.toLowerCase().trim();
-    console.log(query);
+    console.log(query)
 
     const pokemonDivs = document.getElementsByClassName("pokemonDiv");
     const queriedDiv = document.getElementById(query);
@@ -66,4 +66,13 @@ searchForm.addEventListener("submit", (e) => {
         console.log("Invalid pokemon name, try another one!");
     }
     
+})
+
+// show all pokemon
+const showAll = document.getElementById("showAll");
+showAll.addEventListener("click", () => {
+    const pokemonDivs = document.getElementsByClassName("pokemonDiv");
+    for(const pokemonDiv of pokemonDivs){
+        pokemonDiv.style.display = "flex"; // reset divs to display all pokemon
+    }
 })
