@@ -49,7 +49,7 @@ searchForm.addEventListener("submit", (e) => {
     const pokemonDivs = document.getElementsByClassName("pokemonDiv");
     const queriedDiv = document.getElementById(query);
     console.log(queriedDiv);
-    if(queriedDiv !== undefined){
+    if(queriedDiv !== null){
         for(const pokemonDiv of pokemonDivs){
             const name = pokemonDiv.getElementsByTagName("h3")[0].innerText;
             console.log(name);
