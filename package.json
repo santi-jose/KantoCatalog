@@ -1,0 +1,16 @@
+{
+  "name": "kanto-catalog",
+  "version": "1.0.0",
+  "description": "Catalog of pokemon found in the Kanto region",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Jose Santiago",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

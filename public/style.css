@@ -1,0 +1,23 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+#pokemonContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pokemonDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 4px;
+    width: 20%;
+    margin: 5%;
+}
+
